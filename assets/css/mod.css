@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+  min-height: 100vh;
+  /*display : flex;*/
+  justify-content: center;
+  /*align-items: center;*/
+  /*background: #2745eb;*/
+  overflow-x: hidden;
+  background-image: url(/assets/fonts/pexels-adrien-olichon-2387793.jpg);
+}
+
+header{
+  background-image: url(/assets/pexels.jpg) ;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+
+h1{
+  font-size: 100px;
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+  padding-top: 140px;
+   /*color: #268ee4;*/
+}
+
+body::before{
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  /* background: linear-gradient(#ffc107,#e91e63);*/
+  border-radius: 50%;
+  transform: translate(-250px,-120px);
+  z-index: -1;
+}
+
+body::after{
+  content: '';
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  /* background: linear-gradient(#2196f3,#31ff38);*/
+  border-radius: 50%;
+  transform: translate(250px,150px);
+  z-index: -1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .modal img {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  max-height: 80%;
+  padding: 20px;
+  z-index: 1000;
+  }
+  
+  .modal .caption {
+  color: #000000;
+  position: absolute;
+  top: 600px;
+  z-index: 200;
+  
+  }
+  
+  .modal .close {
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  }
+  
+  .modal .close:hover,
+  .modal .close:focus {
+  color: #ccc;
+  }
+  
+  #images{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    top: 50px;
+    
+  }
+
+  #images img{
+    width: 180px;
+    cursor: pointer;
+    transition: all .1s ease-in;
+    border-radius: 10px;
+    margin:10px  10px;
+  }
+  #images img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px white;
+  }
+
+
+
+  .close{
+    position: absolute;
+    bottom: 0px;
+    left: 230px;
+  }
+
+  .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 300px;
+    margin: 10px 0px 0px 0px;
+    top: 5px;
+    width: 700px;
+    height: 660px;
+    border-radius: 2%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: -1;
+    }
+
+  
